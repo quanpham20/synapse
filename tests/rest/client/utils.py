@@ -142,7 +142,6 @@ class RestHelper:
             content["room_version"] = room_version
         if tok:
             path = path + "?access_token=%s" % tok
-        logging.info("quandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptraiquandeptrai")
         channel = make_request(
             self.reactor,
             self.site,
@@ -156,7 +155,7 @@ class RestHelper:
         self.auth_user_id = temp_id
 
         if expect_code == HTTPStatus.OK:
-            return channel.json_body["room_id"]
+            return "cccccc"
         else:
             return None
 
