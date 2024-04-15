@@ -8,7 +8,7 @@
 # synapse repository:
 #
 #    DOCKER_BUILDKIT=1 docker build -f docker/Dockerfile .
-#
+# 
 # There is an optional PYTHON_VERSION build argument which sets the
 # version of python to build against: for example:
 #
