@@ -117,11 +117,11 @@ def register_new_user(
             default_user = None
 
         if default_user:
-            user = input("New user localpart1 [%s]: " % (default_user,))
+            user = input("New user localpart2 [%s]: " % (default_user,))
             if not user:
                 user = default_user
         else:
-            user = input("New user localpart1: ")
+            user = input("New user localpart2: ")
 
     if not user:
         print("Invalid user name")
