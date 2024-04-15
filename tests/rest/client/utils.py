@@ -155,7 +155,7 @@ class RestHelper:
         self.auth_user_id = temp_id
 
         if expect_code == HTTPStatus.OK:
-            return "cccccc"
+            return channel.json_body["room_id"]
         else:
             return None
 

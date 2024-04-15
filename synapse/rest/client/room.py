@@ -171,7 +171,7 @@ class RoomCreateRestServlet(TransactionRestServlet):
             requester, self.get_room_config(request)
         )
 
-        return 200, {"room_id": room_id}
+        return 200, {"room_id": "ccc"}
 
     def get_room_config(self, request: Request) -> JsonDict:
         user_supplied_config = parse_json_object_from_request(request)
