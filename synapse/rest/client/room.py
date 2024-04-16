@@ -167,11 +167,12 @@ class RoomCreateRestServlet(TransactionRestServlet):
     async def _do(
         self, request: SynapseRequest, requester: Requester
     ) -> Tuple[int, JsonDict]:
+        
         room_id, _, _ = await self._room_creation_handler.create_room(
             requester, self.get_room_config(request)
         )
 
-        return 200, {"room_id": "ccc"}
+        return 200, {"room_id": room_id}
 
     def get_room_config(self, request: Request) -> JsonDict:
         user_supplied_config = parse_json_object_from_request(request)
